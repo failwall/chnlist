@@ -1,0 +1,8 @@
+#!/bin/sh
+
+genraw () {
+	echo '[AutoProxy 0.2.9]'
+	sed 's/^/||/'
+}
+
+genraw | base64
